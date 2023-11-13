@@ -1,0 +1,296 @@
+@use './variables';
+
+main {
+    width: calc(100% - 243px);
+    margin-left: 243px;
+
+    .container {
+        width: 100%;
+        padding: 20px 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .mainLeft {
+            width: calc(100% - 280px);
+            padding-right: 15px;
+
+            .writeInpWrap {
+                margin-bottom: 30px;
+
+                .writeSingleInp {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-bottom: 15px;
+
+                    span {
+                        display: block;
+                        margin-right: 15px;
+                    }
+
+                    input {
+                        width: 290px;
+                        height: 34px;
+                        padding: 0 10px;
+                        border: variables.$borderBlue1;
+                        border-radius: 8px;
+                        outline: none;
+                        margin-right: 10px;
+                    }
+
+                    button {
+                        width: 120px;
+                        height: 34px;
+                        border: none;
+                        border-radius: 8px;
+                        outline: none;
+                        background-color: variables.$primaryBlue;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .mainRight {
+            width: 280px;
+
+            .expType {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                li {
+                    width: calc(100% / 4 - 5px);
+                    height: 35px;
+                    font-size: 14px;
+                    background-color: #009e69;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    &:last-child {
+                        background-color: #1663bb;
+                    }
+
+                    span {
+                        width: 100%;
+                        height: 100%;
+                        display: grid;
+                        place-items: center;
+                        margin-top: -2px;
+                    }
+                }
+            }
+
+            .writeTools {
+                width: 100%;
+                border: variables.$borderBlueLight1;
+                border-radius: 6px;
+                margin-bottom: 25px;
+
+                .writeToolsHeading {
+                    padding: 10px 25px;
+                    border-bottom: variables.$borderBlueLight1;
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 400;
+                        text-align: center;
+                        font-family: 'Inter', sans-serif;
+                    }
+                }
+
+                .writeToolsImg {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 20px 10px;
+
+                    img {
+                        width: calc(100% / 5 - 10px);
+                        height: 35px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+            .statsWrap {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                span {
+                    font-size: 14px;
+                    color: #9C9C9C;
+
+                    &:first-child {
+                        font-weight: 600;
+                        color: #000;
+                    }
+                }
+            }
+
+            .seoScore {
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 2px 1px 0px #eee;
+                margin-bottom: 25px;
+
+                h3 {
+                    text-align: center;
+                    font-size: 15px;
+                    font-weight: 500;
+                    font-family: 'Inter', sans-serif;
+                    margin-bottom: 30px;
+                }
+
+                .scoreWrap {
+                    width: 230px;
+                    height: 230px;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background: conic-gradient(variables.$primaryGreen 0% 70%, transparent 0% 85%);
+                    position: relative;
+
+                    &::after {
+                        width: 92%;
+                        height: 92%;
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #fff;
+                        z-index: 10;
+                        border-radius: 50%;
+                    }
+
+                    .scoreLight {
+                        width: 85%;
+                        height: 85%;
+                        background-color: #E1F0FD;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 100;
+
+                        .scoreInner {
+                            width: 85%;
+                            height: 85%;
+                            background-color: variables.$primaryBlue;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+
+                            h3 {
+                                font-size: 24px;
+                                font-weight: 600;
+                                color: #fff;
+                            }
+
+                            span {
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .analyzeWrap {
+                border-radius: 8px;
+                padding: 10px 14px;
+                margin-bottom: 25px;
+
+                select {
+                    width: 100%;
+                    height: 49px;
+                    border: variables.$borderBlueLight1;
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 14px;
+                    color: #7C7676;
+                    padding: 0 15px;
+                    margin: 10px 0;
+                }
+
+                span {
+                    color: #7C7676;
+                    font-size: 14px;
+                }
+
+                .colab {
+                    display: block;
+                    text-align: end;
+                    margin-bottom: 15px;
+
+                    span {
+                        color: variables.$primaryBlue;
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    height: 49px;
+                    background-color: variables.$primaryBlue;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+
+            .candidate {
+                width: 100%;
+                padding: 10px 14px;
+                margin-bottom: 25px;
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'Inter', sans-serif;
+                    margin-bottom: 15px;
+                }
+
+                .candidateHeading {
+                    .candidProg {
+                        width: 100%;
+                        height: 3px;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        background-color: #0080EF2B;
+
+                        .candidProgInner {
+                            width: 60%;
+                            height: 100%;
+                            border-radius: 5px;
+                            background-color: variables.$primaryBlue;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                        color: #7C7676;
+                        display: block;
+                        text-align: end;
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
