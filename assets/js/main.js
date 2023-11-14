@@ -2,12 +2,20 @@ const nestedItem = document.querySelector(".nestedItem")
 const nestedToggleMenu = document.querySelector(".nestedToggleMenu")
 const arrow = document.querySelector(".arrow")
 
+const writeInpToggle = document.querySelector(".writeInpRight p")
+const writeInpLeft = document.querySelector(".writeInpLeft")
+
 
 nestedItem.addEventListener("click", () => {
     nestedToggleMenu.classList.toggle("active")
     arrow.classList.toggle("active")
 })
 
+
+
+writeInpToggle.addEventListener("click", () => {
+    writeInpLeft.classList.toggle("active")
+})
 
 
 

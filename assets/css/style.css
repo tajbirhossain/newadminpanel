@@ -194,6 +194,12 @@ main .container .mainLeft .writeInpWrap {
 }
 main .container .mainLeft .writeInpWrap .writeInpLeft {
   width: 550px;
+  height: 100px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+main .container .mainLeft .writeInpWrap .writeInpLeft.active {
+  height: 0px;
 }
 main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
   display: flex;
@@ -238,6 +244,7 @@ main .container .mainLeft .writeInpWrap .writeInpRight p {
   font-size: 15px;
   font-weight: 500;
   color: #693fdf;
+  cursor: pointer;
 }
 main .container .mainLeft .writeInpWrap .writeInpRight p span {
   margin-top: -3px;
@@ -342,7 +349,6 @@ main .container .mainRight .writeTools .writeToolsImg img {
 }
 main .container .mainRight .writeTools .writeToolsImg img:hover {
   opacity: 0.5;
-  bottom: 2px;
 }
 main .container .mainRight .statsWrap {
   width: 100%;
