@@ -51,6 +51,27 @@ main {
                     }
                 }
             }
+
+            .finishBtn {
+                width: 127px;
+                height: 40px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                color: #fff;
+                background-color: variables.$primaryBlue;
+                text-align: center;
+                display: block;
+                margin: auto;
+                margin-top: 20px;
+                cursor: pointer;
+
+                span {
+                    margin-top: -2px;
+                    font-size: 12px;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
         }
 
         .mainRight {
@@ -223,13 +244,13 @@ main {
                     border-radius: 5px;
                     outline: none;
                     font-size: 14px;
-                    color: #7C7676;
+                    color: variables.$darkGray;
                     padding: 0 15px;
                     margin: 10px 0;
                 }
 
                 span {
-                    color: #7C7676;
+                    color: variables.$darkGray;
                     font-size: 14px;
                 }
 
@@ -258,16 +279,19 @@ main {
             .candidate {
                 width: 100%;
                 padding: 10px 14px;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
 
-                h2 {
-                    font-size: 18px;
-                    font-weight: 600;
-                    font-family: 'Inter', sans-serif;
-                    margin-bottom: 15px;
-                }
 
                 .candidateHeading {
+                    margin-bottom: 25px;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-family: 'Inter', sans-serif;
+                        margin-bottom: 15px;
+                    }
+
                     .candidProg {
                         width: 100%;
                         height: 3px;
@@ -282,12 +306,266 @@ main {
                             background-color: variables.$primaryBlue;
                         }
                     }
+
                     span {
                         font-size: 14px;
-                        color: #7C7676;
+                        color: variables.$darkGray;
                         display: block;
                         text-align: end;
                         margin-top: 8px;
+                    }
+                }
+
+                .candidMain {
+                    .candidIdentifier {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 13px;
+                            color: variables.$darkGray;
+
+                            span {
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                display: block;
+                                margin-bottom: -2px;
+                                margin-right: 5px;
+                            }
+
+                            &:first-child span {
+                                background-color: #FF6D6F4D;
+                            }
+
+                            &:nth-child(2) span {
+                                background-color: #0080EF99;
+                            }
+
+                            &:last-child span {
+                                background-color: #C8FBDE;
+                            }
+                        }
+                    }
+
+                    .cadidTags {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+
+                        li {
+                            width: fit-content;
+                            height: 30px;
+                            border-radius: 30px;
+                            font-size: 13px;
+                            padding: 0 11px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: variables.$darkGray;
+                            margin-right: 8px;
+                            margin-bottom: 8px;
+
+                            &.tagBlue {
+                                background-color: #E1F0FD;
+                            }
+
+                            &.tagGreen {
+                                background-color: #D3FFE6;
+                            }
+
+                            &.tagRed {
+                                background-color: #FAD5D6;
+                            }
+
+                            span {
+                                margin-top: -3px;
+                            }
+                        }
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: variables.$primaryBlue;
+                        text-align: center;
+                        margin-top: 15px;
+                        display: block;
+
+                        img {
+                            margin-bottom: -3px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .plagRism {
+                width: 100%;
+                padding: 10px 14px;
+                margin-bottom: 5px;
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                .plagScoreWrap {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .plagSingleScore {
+                        width: 105px;
+                        height: 105px;
+                        margin: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        background: conic-gradient(variables.$tomatoRed 0% 70%, transparent 0% 85%);
+                        position: relative;
+
+                        &.secondPlagScore {
+                            background: conic-gradient(variables.$primaryGreen 0% 70%, transparent 0% 85%);
+                        }
+
+                        &::after {
+                            width: 92%;
+                            height: 92%;
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: #fff;
+                            z-index: 10;
+                            border-radius: 50%;
+                        }
+
+                        .plagLight {
+                            width: 85%;
+                            height: 85%;
+                            background-color: #FFDDDD;
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 100;
+
+                            &.secondPlagLight {
+                                background-color: #E1F0FD;
+                            }
+
+                            .plagInner {
+                                width: 85%;
+                                height: 85%;
+                                background-color: variables.$tomatoRed;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+
+                                &.secondPlagInner {
+                                    background-color: variables.$primaryBlue;
+                                }
+
+                                h3 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #fff;
+                                }
+
+                                span {
+                                    font-size: 12px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                button {
+                    width: 100%;
+                    height: 32px;
+                    border: none;
+                    border-radius: 5px;
+                    outline: none;
+                    background-color: variables.$primaryBlue;
+                    color: #fff;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    span {
+                        margin-top: -2px;
+                    }
+                }
+            }
+
+            .viewPlagSource {
+                width: 100%;
+                padding: 10px 14px;
+                margin-bottom: 25px;
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: 'Inter', sans-serif;
+                    margin-bottom: 15px;
+                }
+
+                .plagNoti {
+                    width: 100%;
+                    height: fit-content;
+                    padding: 17px;
+                    border-radius: 5px;
+                    background-color: #DAE8F3;
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: variables.$primaryBlue;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: variables.$darkGray;
+                        margin-bottom: 10px;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 13px;
+                    }
+
+                    .plagProg {
+                        width: 100%;
+                        height: 3px;
+                        background-color: #0080EF2B;
+                        border-radius: 5px;
+                        overflow: hidden;
+
+                        .plagProgInner {
+                            width: 70%;
+                            height: 100%;
+                            border-radius: 5px;
+                            background-color: variables.$primaryBlue;
+                        }
                     }
                 }
             }
