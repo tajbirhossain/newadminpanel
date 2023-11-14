@@ -156,14 +156,26 @@
                     </div>
                 </div>
                 <textarea class="mainEditor">
+                    <div class="withInsertBtn">
                     <h2>Ranking a website in search engine results is a multifaceted</h2>
+                    <button class="insertBtn">
+                        <img src="assets/images/icons/upload.svg" alt="">
+                        <small class="insertTxt">Insert image</small>
+                    </button>
+                    </div>
                     <p>Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. 
                         It all starts with thorough keyword research to identify the terms your target audience is searching for.
                         Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. 
                         Providing an excellent user experience through a well-designed, 
                         mobile-friendly website with fast loading times is crucial. 
                         Building a strong backlink.</p>
-                    <h2>Ranking a website in search engine results is a multifaceted</h2>
+                        <div class="withInsertBtn">
+                            <h2>Ranking a website in search engine results is a multifaceted</h2>
+                            <button class="insertBtn">
+                                <img src="assets/images/icons/upload.svg" alt="">
+                                <small class="insertTxt">Insert image</small>
+                            </button>
+                        </div>
                     <p>Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. 
                         It all starts with thorough keyword research to identify the terms your target audience is searching for.
                         Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. 
@@ -346,7 +358,7 @@
                 { value: 'Email', title: 'Email' },
             ],
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
-            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; }",
+            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } div.withInsertBtn {display: flex; align-items: flex-start; justify-content: space-between;} button.insertBtn {width: 94px; height: 64px; border-radius: 10px; border: 1px dashed #0080EF; padding: 0; padding-top: 5px; margin-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-direction: column; overflow: hidden; background-color: #0080EF1F; cursor: pointer;} small.insertTxt {width: 100%; height: 20px; display: flex; align-items: center; justify-content: center; background-color: #0080EF; color: #fff}",
         });
     </script>
     <script src="assets/js/main.js"></script>

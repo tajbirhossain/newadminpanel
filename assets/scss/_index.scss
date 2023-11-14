@@ -22,6 +22,7 @@ main {
 
                 .writeInpLeft {
                     width: 550px;
+
                     .writeSingleInp {
                         display: flex;
                         align-items: center;
@@ -55,8 +56,10 @@ main {
                         }
                     }
                 }
+
                 .writeInpRight {
                     width: calc(100% - 550px);
+
                     p {
                         display: flex;
                         align-items: center;
@@ -64,11 +67,13 @@ main {
                         font-size: 15px;
                         font-weight: 500;
                         color: #693fdf;
+
                         span {
                             margin-top: -3px;
                             display: block;
                             margin-right: 5px;
                         }
+
                         img {
                             width: 24px;
                             cursor: pointer;
@@ -76,6 +81,8 @@ main {
                     }
                 }
             }
+
+
 
             .finishBtn {
                 width: 127px;
