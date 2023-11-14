@@ -136,18 +136,48 @@
         <div class="container">
             <div class="mainLeft">
                 <div class="writeInpWrap">
-                    <div class="writeSingleInp">
-                        <span>Title</span>
-                        <input type="text" placeholder="Enter title here...">
-                        <button>Generate</button>
+                    <div class="writeInpLeft">
+                        <div class="writeSingleInp">
+                            <span>Title</span>
+                            <input type="text" placeholder="Enter title here...">
+                            <button>Generate</button>
+                        </div>
+                        <div class="writeSingleInp">
+                            <span>Description</span>
+                            <input type="text" placeholder="Enter description here...">
+                            <button>Generate</button>
+                        </div>
                     </div>
-                    <div class="writeSingleInp">
-                        <span>Description</span>
-                        <input type="text" placeholder="Enter description here...">
-                        <button>Generate</button>
+                    <div class="writeInpRight">
+                        <p>
+                            <span>METAS</span>
+                            <img src="assets/images/icons/closeround.png" alt="">
+                        </p>
                     </div>
                 </div>
-                <textarea class="mainEditor"></textarea>
+                <textarea class="mainEditor">
+                    <h2>Ranking a website in search engine results is a multifaceted</h2>
+                    <p>Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. 
+                        It all starts with thorough keyword research to identify the terms your target audience is searching for.
+                        Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. 
+                        Providing an excellent user experience through a well-designed, 
+                        mobile-friendly website with fast loading times is crucial. 
+                        Building a strong backlink.</p>
+                    <h2>Ranking a website in search engine results is a multifaceted</h2>
+                    <p>Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. 
+                        It all starts with thorough keyword research to identify the terms your target audience is searching for.
+                        Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. 
+                        Providing an excellent user experience through a well-designed, 
+                        mobile-friendly website with fast loading times is crucial. 
+                        Building a strong backlink.</p>
+                        <img src="https://images.unsplash.com/photo-1682687980976-fec0915c6177?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" width="350" class="alignLeft">
+                        <p>Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. 
+                            It all starts with thorough keyword research to identify the terms your target audience is searching for. 
+                            Crafting high-quality, user-focused content and optimizing it.
+                            Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. It all starts with thorough keyword research to identify the terms your target audience is searching for. Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink .
+                            Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. It all starts with thorough keyword research to identify the terms your target audience is searching for. Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink .mizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink.
+                            </p>
+                </textarea>
                 <button class="finishBtn"><span>Finish Article</span></button>
             </div>
             <div class="mainRight">
@@ -309,12 +339,14 @@
             toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline forecolor | align link numlist bullist | image blockquote table | tinycomments',
             tinycomments_mode: 'embedded',
             menubar: false,
+            height: 1000,
             tinycomments_author: 'Tajbir Hossain',
             mergetags_list: [
                 { value: 'First.Name', title: 'First Name' },
                 { value: 'Email', title: 'Email' },
             ],
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
+            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; }",
         });
     </script>
     <script src="assets/js/main.js"></script>

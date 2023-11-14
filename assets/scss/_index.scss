@@ -17,37 +17,62 @@ main {
 
             .writeInpWrap {
                 margin-bottom: 30px;
+                display: flex;
+                align-items: flex-start;
 
-                .writeSingleInp {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin-bottom: 15px;
+                .writeInpLeft {
+                    width: 550px;
+                    .writeSingleInp {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin-bottom: 15px;
 
-                    span {
-                        display: block;
-                        margin-right: 15px;
+                        span {
+                            display: block;
+                            margin-right: 15px;
+                        }
+
+                        input {
+                            width: 290px;
+                            height: 34px;
+                            padding: 0 10px;
+                            border: variables.$borderBlue1;
+                            border-radius: 8px;
+                            outline: none;
+                            margin-right: 10px;
+                        }
+
+                        button {
+                            width: 120px;
+                            height: 34px;
+                            border: none;
+                            border-radius: 8px;
+                            outline: none;
+                            background-color: variables.$primaryBlue;
+                            color: #fff;
+                            cursor: pointer;
+                        }
                     }
-
-                    input {
-                        width: 290px;
-                        height: 34px;
-                        padding: 0 10px;
-                        border: variables.$borderBlue1;
-                        border-radius: 8px;
-                        outline: none;
-                        margin-right: 10px;
-                    }
-
-                    button {
-                        width: 120px;
-                        height: 34px;
-                        border: none;
-                        border-radius: 8px;
-                        outline: none;
-                        background-color: variables.$primaryBlue;
-                        color: #fff;
-                        cursor: pointer;
+                }
+                .writeInpRight {
+                    width: calc(100% - 550px);
+                    p {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #693fdf;
+                        span {
+                            margin-top: -3px;
+                            display: block;
+                            margin-right: 5px;
+                        }
+                        img {
+                            width: 24px;
+                            cursor: pointer;
+                        }
                     }
                 }
             }

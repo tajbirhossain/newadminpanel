@@ -189,18 +189,23 @@ main .container .mainLeft {
 }
 main .container .mainLeft .writeInpWrap {
   margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
 }
-main .container .mainLeft .writeInpWrap .writeSingleInp {
+main .container .mainLeft .writeInpWrap .writeInpLeft {
+  width: 550px;
+}
+main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 15px;
 }
-main .container .mainLeft .writeInpWrap .writeSingleInp span {
+main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
   display: block;
   margin-right: 15px;
 }
-main .container .mainLeft .writeInpWrap .writeSingleInp input {
+main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
   width: 290px;
   height: 34px;
   padding: 0 10px;
@@ -209,7 +214,7 @@ main .container .mainLeft .writeInpWrap .writeSingleInp input {
   outline: none;
   margin-right: 10px;
 }
-main .container .mainLeft .writeInpWrap .writeSingleInp button {
+main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
   width: 120px;
   height: 34px;
   border: none;
@@ -217,6 +222,26 @@ main .container .mainLeft .writeInpWrap .writeSingleInp button {
   outline: none;
   background-color: #0080EF;
   color: #fff;
+  cursor: pointer;
+}
+main .container .mainLeft .writeInpWrap .writeInpRight {
+  width: calc(100% - 550px);
+}
+main .container .mainLeft .writeInpWrap .writeInpRight p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #693fdf;
+}
+main .container .mainLeft .writeInpWrap .writeInpRight p span {
+  margin-top: -3px;
+  display: block;
+  margin-right: 5px;
+}
+main .container .mainLeft .writeInpWrap .writeInpRight p img {
+  width: 24px;
   cursor: pointer;
 }
 main .container .mainLeft .finishBtn {
