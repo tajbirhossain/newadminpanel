@@ -380,16 +380,59 @@ main .container .mainRight .analyzeWrap {
   padding: 10px 14px;
   margin-bottom: 25px;
 }
-main .container .mainRight .analyzeWrap select {
+main .container .mainRight .analyzeWrap .custom-select {
   width: 100%;
   height: 49px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+main .container .mainRight .analyzeWrap .custom-select select {
+  display: none;
+}
+main .container .mainRight .analyzeWrap .custom-select .select-styled {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
   border: 1px solid rgba(0, 127, 239, 0.2588235294);
   border-radius: 5px;
   outline: none;
   font-size: 14px;
   color: #7C7676;
   padding: 0 15px;
-  margin: 10px 0;
+}
+main .container .mainRight .analyzeWrap .custom-select .select-styled:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0;
+  border-color: #555 transparent transparent transparent;
+  border-style: solid;
+  transition: transform 0.3s ease-in-out;
+}
+main .container .mainRight .analyzeWrap .custom-select .select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  z-index: 10;
+}
+main .container .mainRight .analyzeWrap .custom-select .select-options div {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+main .container .mainRight .analyzeWrap .custom-select .select-options div:hover {
+  background-color: #ddd;
 }
 main .container .mainRight .analyzeWrap span {
   color: #7C7676;
