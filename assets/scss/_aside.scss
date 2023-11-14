@@ -152,3 +152,34 @@ aside {
         }
     }
 }
+
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000087;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    aside {
+        height: 100vh;
+        top: 0;
+        left: -250px;
+        transition: .3s;
+        z-index: 10000;
+        background-color: #fff;
+
+        &.active {
+            left: 0;
+        }
+    }
+}

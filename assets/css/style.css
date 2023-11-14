@@ -14,6 +14,9 @@ header {
   background-color: #fff;
   z-index: 999;
 }
+header .menuToggle {
+  display: none;
+}
 header .headerLeft {
   display: flex;
   align-items: center;
@@ -103,7 +106,74 @@ header .headerRight .profileInfo .profileRight span {
   font-weight: 300;
   color: #9C9C9C;
 }
+header .headerRight .profileInfo .profileRight .dots {
+  display: none;
+}
 
+@media (max-width: 1100px) {
+  header .headerLeft h1 {
+    margin-right: 30px;
+  }
+  header .headerLeft form .headerInpWrap input {
+    width: 270px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    padding-left: 30px;
+  }
+  header .menuToggle {
+    display: block;
+  }
+  header .headerLeft .logoWrap {
+    width: fit-content;
+    border-right: none;
+    padding: 0;
+  }
+  header .headerLeft .logoWrap img {
+    width: 130px;
+  }
+  header .headerLeft h1 {
+    display: none;
+  }
+  header .headerLeft form {
+    display: none;
+  }
+}
+@media (max-width: 590px) {
+  header .headerLeft .logoWrap {
+    margin-right: 0;
+  }
+  header .headerRight button {
+    margin-right: 10px;
+  }
+  header .headerRight .profileInfo .profileRight h3 {
+    display: none;
+  }
+  header .headerRight .profileInfo .profileRight span {
+    display: none;
+  }
+  header .headerRight .profileInfo .profileRight .dots {
+    display: block;
+    height: 32px;
+  }
+}
+@media (max-width: 400px) {
+  header .headerLeft .logoWrap img {
+    width: 110px;
+  }
+  header .headerRight button {
+    width: 27px;
+    height: 27px;
+  }
+  header .headerRight .profileInfo .profileLeft {
+    width: 30px;
+    height: 30px;
+  }
+  header .headerRight .profileInfo .profileRight .dots {
+    height: 27px;
+  }
+}
 @font-face {
   font-family: "Inter";
   src: url("../../fonts/inter/Inter-Regular.woff");
@@ -766,6 +836,98 @@ main .container .mainRight .viewPlagSource .plagNoti .plagProg .plagProgInner {
   background-color: #0080EF;
 }
 
+@media (max-width: 1200px) {
+  main .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: 440px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: 210px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpRight {
+    width: calc(100% - 440px);
+  }
+}
+@media (max-width: 1100px) {
+  main .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .container .mainLeft {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: calc(100% - 80px);
+    padding-right: 35px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: 100%;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpRight {
+    width: 80px;
+  }
+  main .container .mainRight {
+    width: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 590px) {
+  main .container .mainLeft .writeInpWrap .writeInpLeft {
+    padding-right: 20px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
+    margin-right: 10px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 181px);
+  }
+  main .container .mainRight {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  main .container .mainLeft .writeInpWrap {
+    height: 150px;
+    transition: 0.3s;
+    position: relative;
+  }
+  main .container .mainLeft .writeInpWrap.active {
+    height: 40px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: 100%;
+    height: 150px;
+    padding-right: 0;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
+    flex-wrap: wrap;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 130px);
+  }
+  main .container .mainLeft .writeInpWrap .writeInpRight {
+    position: absolute;
+    right: 0;
+    top: -8px;
+  }
+}
+@media (max-width: 400px) {
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
+    width: 85px;
+  }
+  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 95px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -909,6 +1071,34 @@ aside nav .upgrade button {
   background-color: #0080EF;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5294117647);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    height: 100vh;
+    top: 0;
+    left: -250px;
+    transition: 0.3s;
+    z-index: 10000;
+    background-color: #fff;
+  }
+  aside.active {
+    left: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

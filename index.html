@@ -12,6 +12,7 @@
 
 <body>
     <header>
+        <img src="assets/images/icons/bars.svg" alt="" class="menuToggle">
         <div class="headerLeft">
             <div class="logoWrap">
                 <img src="assets/images/LOGO-SEOAI.svg" alt="" class="siteLogo">
@@ -35,6 +36,7 @@
                 <div class="profileRight">
                     <h3>James Williams</h3>
                     <span>Marketing Manager</span>
+                    <img src="assets/images/icons/dots.png" alt="" class="dots">
                 </div>
             </div>
         </div>
@@ -169,6 +171,10 @@
                         Providing an excellent user experience through a well-designed, 
                         mobile-friendly website with fast loading times is crucial. 
                         Building a strong backlink.</p>
+                        <button class="insertBtn insert2">
+                            <img src="assets/images/icons/upload.svg" alt="">
+                            <small class="insertTxt">Insert image</small>
+                        </button>
                         <div class="withInsertBtn">
                             <h2>Ranking a website in search engine results is a multifaceted</h2>
                             <button class="insertBtn">
@@ -189,6 +195,10 @@
                             Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. It all starts with thorough keyword research to identify the terms your target audience is searching for. Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink .
                             Ranking a website in search engine results is a multifaceted process that involves a combination of strategies. It all starts with thorough keyword research to identify the terms your target audience is searching for. Crafting high-quality, user-focused content and optimizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink .mizing it for on-page SEO is paramount. Providing an excellent user experience through a well-designed, mobile-friendly website with fast loading times is crucial. Building a strong backlink.
                             </p>
+                            <button class="insertBtn insert2">
+                                <img src="assets/images/icons/upload.svg" alt="">
+                                <small class="insertTxt">Insert image</small>
+                            </button>
                 </textarea>
                 <button class="finishBtn"><span>Finish Article</span></button>
             </div>
@@ -339,6 +349,8 @@
         </div>
     </main>
 
+    <div class="overlay"></div>
+
 
 
 
@@ -358,7 +370,7 @@
                 { value: 'Email', title: 'Email' },
             ],
             ai_request: (request, respondWith) => respondWith.string(() => Promise.reject("See docs to implement AI Assistant")),
-            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } div.withInsertBtn {display: flex; align-items: flex-start; justify-content: space-between;} button.insertBtn {width: 94px; height: 64px; border-radius: 10px; border: 1px dashed #0080EF; padding: 0; padding-top: 5px; margin-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-direction: column; overflow: hidden; background-color: #0080EF1F; cursor: pointer; transition: .3s;} button.insertBtn:hover {background-color: #0080ef36;} small.insertTxt {width: 100%; height: 20px; display: flex; align-items: center; justify-content: center; background-color: #0080EF; color: #fff}",
+            content_style: "img.alignLeft { float: left; margin: 0 15px 15px 0; } img.alignRight { float: right; margin: 0 0 15px 15px; } div.withInsertBtn {display: flex; align-items: flex-start; justify-content: space-between;} h1,h2,h3 {width: calc(100% - 98px)} button.insert2 {display: none} button.insertBtn {width: 94px; height: 64px; border-radius: 10px; border: 1px dashed #0080EF; padding: 0; padding-top: 5px; margin-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-direction: column; overflow: hidden; background-color: #0080EF1F; cursor: pointer; transition: .3s;} button.insertBtn:hover {background-color: #0080ef36;} small.insertTxt {width: 100%; height: 20px; display: flex; align-items: center; justify-content: center; background-color: #0080EF; color: #fff}  @media (max-width: 400px) {button.insertBtn {display: none;} button.insert2 {display: flex; width: 100%} h1,h2,h3 {width: 100%} img.alignLeft, img.alignRight {width: 100%;}}",
         });
     </script>
     <script src="assets/js/main.js"></script>

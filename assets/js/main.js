@@ -3,7 +3,12 @@ const nestedToggleMenu = document.querySelector(".nestedToggleMenu")
 const arrow = document.querySelector(".arrow")
 
 const writeInpToggle = document.querySelector(".writeInpRight p")
+const writeInpWrap = document.querySelector(".writeInpWrap")
 const writeInpLeft = document.querySelector(".writeInpLeft")
+
+const menuToggle = document.querySelector(".menuToggle")
+const aside = document.querySelector("aside")
+const overlay = document.querySelector(".overlay")
 
 
 nestedItem.addEventListener("click", () => {
@@ -19,13 +24,25 @@ writeInpToggle.addEventListener("click", () => {
         writeInpLeft.style.opacity = "0"
         setTimeout(() => {
             writeInpLeft.classList.add("active")
+            writeInpWrap.classList.add("active")
         }, 300);
         isOpen = false
     } else {
         writeInpLeft.style.opacity = "1"
         writeInpLeft.classList.remove("active")
+        writeInpWrap.classList.remove("active")
         isOpen = true
     }
+})
+
+
+menuToggle.addEventListener("click", () => {
+    aside.classList.add("active")
+    overlay.classList.add("active")
+})
+overlay.addEventListener("click", () => {
+    aside.classList.remove("active")
+    overlay.classList.remove("active")
 })
 
 
