@@ -334,6 +334,15 @@ main .container .mainRight .writeTools .writeToolsImg img {
   width: calc(20% - 10px);
   height: 35px;
   object-fit: contain;
+  transition: 0.3s;
+  opacity: 1;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+}
+main .container .mainRight .writeTools .writeToolsImg img:hover {
+  opacity: 0.5;
+  bottom: 2px;
 }
 main .container .mainRight .statsWrap {
   width: 100%;

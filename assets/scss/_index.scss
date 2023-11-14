@@ -183,6 +183,15 @@ main {
                         width: calc(100% / 5 - 10px);
                         height: 35px;
                         object-fit: contain;
+                        transition: .3s;
+                        opacity: 1;
+                        cursor: pointer;
+                        position: relative;
+                        bottom: 0;
+                        &:hover {
+                            opacity: .5;
+                            bottom: 2px;
+                        }
                     }
                 }
             }
