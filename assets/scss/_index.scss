@@ -53,6 +53,10 @@ main {
                             background-color: variables.$primaryBlue;
                             color: #fff;
                             cursor: pointer;
+                            transition: .3s;
+                            &:hover {
+                                background-color: #005fb3;
+                            }
                         }
                     }
                 }
@@ -97,6 +101,10 @@ main {
                 margin: auto;
                 margin-top: 20px;
                 cursor: pointer;
+                transition: .3s;
+                &:hover {
+                    background-color: #005fb3;
+                }
 
                 span {
                     margin-top: -2px;
@@ -125,9 +133,16 @@ main {
                     border-radius: 5px;
                     cursor: pointer;
                     overflow: hidden;
+                    transition: .3s;
+                    &:hover {
+                        background-color: #007a51;
+                    }
 
                     &:last-child {
                         background-color: #1663bb;
+                        &:hover {
+                            background-color: #10498b;
+                        }
                     }
 
                     span {
@@ -368,6 +383,11 @@ main {
                     outline: none;
                     font-size: 14px;
                     color: #fff;
+                    cursor: pointer;
+                    transition: .3s;
+                    &:hover {
+                        background-color: #005fb3;
+                    }
                 }
             }
 

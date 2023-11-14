@@ -223,6 +223,10 @@ main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
   background-color: #0080EF;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s;
+}
+main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button:hover {
+  background-color: #005fb3;
 }
 main .container .mainLeft .writeInpWrap .writeInpRight {
   width: calc(100% - 550px);
@@ -257,6 +261,10 @@ main .container .mainLeft .finishBtn {
   margin: auto;
   margin-top: 20px;
   cursor: pointer;
+  transition: 0.3s;
+}
+main .container .mainLeft .finishBtn:hover {
+  background-color: #005fb3;
 }
 main .container .mainLeft .finishBtn span {
   margin-top: -2px;
@@ -282,9 +290,16 @@ main .container .mainRight .expType li {
   border-radius: 5px;
   cursor: pointer;
   overflow: hidden;
+  transition: 0.3s;
+}
+main .container .mainRight .expType li:hover {
+  background-color: #007a51;
 }
 main .container .mainRight .expType li:last-child {
   background-color: #1663bb;
+}
+main .container .mainRight .expType li:last-child:hover {
+  background-color: #10498b;
 }
 main .container .mainRight .expType li span {
   width: 100%;
@@ -480,6 +495,11 @@ main .container .mainRight .analyzeWrap button {
   outline: none;
   font-size: 14px;
   color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+main .container .mainRight .analyzeWrap button:hover {
+  background-color: #005fb3;
 }
 main .container .mainRight .candidate {
   width: 100%;
