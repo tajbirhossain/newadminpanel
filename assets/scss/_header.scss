@@ -169,6 +169,7 @@ header {
                 width: fit-content;
                 border-right: none;
                 padding: 0;
+                margin-right: -70px;
                 img {
                     width: 130px;
                 }
@@ -182,18 +183,33 @@ header {
                 display: none;
             }
         }
+        .headerRight {
+            button {
+                width: 30px;
+                height: 30px;
+                margin-right: 10px;
+            }
+            .profileInfo {
+                .profileRight {
+                    h3 {
+                        display: none;
+                    }
+                    span {
+                        display: none;
+                    }
+                    .dots {
+                        display: block;
+                        height: 32px;
+                    }
+                }
+            }
+        }
     }
 }
 
 
 @media (max-width: 590px) {
     header {
-
-        .headerLeft {
-            .logoWrap {
-                margin-right: 0;
-            }
-        }
 
         .headerRight {
             button {
@@ -219,9 +235,12 @@ header {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
+    header .headerLeft .logoWrap {
+        margin-right: -40px;
+    }
     header .headerLeft .logoWrap img {
-        width: 110px;
+        width: 90px;
     }
     header .headerRight button {
         width: 27px;
