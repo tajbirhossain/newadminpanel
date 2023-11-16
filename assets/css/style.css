@@ -258,703 +258,6 @@ p, button, input {
   font-family: "Inter", sans-serif !important;
 }
 
-main {
-  width: calc(100% - 243px);
-  margin-left: 243px;
-}
-main .container {
-  width: 100%;
-  padding: 20px 30px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-main .container .mainHeading {
-  display: none;
-  text-align: center;
-  margin-bottom: 25px;
-}
-main .container .mainLeft {
-  width: calc(100% - 280px);
-  padding-right: 15px;
-}
-main .container .mainLeft .writeInpWrap {
-  margin-bottom: 30px;
-  display: flex;
-  align-items: flex-start;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft {
-  width: 550px;
-  height: 100px;
-  transition: 0.3s;
-  overflow: hidden;
-  opacity: 1;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft.active {
-  height: 0px;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 15px;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
-  display: block;
-  margin-right: 15px;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-  width: 290px;
-  height: 34px;
-  padding: 0 10px;
-  border: 1px solid #0080EF;
-  border-radius: 8px;
-  outline: none;
-  margin-right: 10px;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
-  width: 120px;
-  height: 34px;
-  border: none;
-  border-radius: 8px;
-  outline: none;
-  background-color: #0080EF;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button:hover {
-  background-color: #005fb3;
-}
-main .container .mainLeft .writeInpWrap .writeInpRight {
-  width: calc(100% - 550px);
-}
-main .container .mainLeft .writeInpWrap .writeInpRight p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 500;
-  color: #693fdf;
-  cursor: pointer;
-}
-main .container .mainLeft .writeInpWrap .writeInpRight p span {
-  margin-top: -3px;
-  display: block;
-  margin-right: 5px;
-}
-main .container .mainLeft .writeInpWrap .writeInpRight p img {
-  width: 24px;
-  cursor: pointer;
-}
-main .container .mainLeft .finishBtn {
-  width: 127px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background-color: #0080EF;
-  text-align: center;
-  display: block;
-  margin: auto;
-  margin-top: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-main .container .mainLeft .finishBtn:hover {
-  background-color: #005fb3;
-}
-main .container .mainLeft .finishBtn span {
-  margin-top: -2px;
-  font-size: 12px;
-  font-family: "Inter", sans-serif;
-}
-main .container .mainRight {
-  width: 280px;
-}
-main .container .mainRight .expType {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-main .container .mainRight .expType li {
-  width: calc(25% - 5px);
-  height: 35px;
-  font-size: 14px;
-  background-color: #009e69;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: 0.3s;
-}
-main .container .mainRight .expType li:hover {
-  background-color: #007a51;
-}
-main .container .mainRight .expType li:last-child {
-  background-color: #1663bb;
-}
-main .container .mainRight .expType li:last-child:hover {
-  background-color: #10498b;
-}
-main .container .mainRight .expType li span {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-  margin-top: -2px;
-}
-main .container .mainRight .writeTools {
-  width: 100%;
-  border: 1px solid rgba(0, 127, 239, 0.2588235294);
-  border-radius: 6px;
-  margin-bottom: 25px;
-}
-main .container .mainRight .writeTools .writeToolsHeading {
-  padding: 10px 25px;
-  border-bottom: 1px solid rgba(0, 127, 239, 0.2588235294);
-}
-main .container .mainRight .writeTools .writeToolsHeading h3 {
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Inter", sans-serif;
-}
-main .container .mainRight .writeTools .writeToolsImg {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 10px;
-}
-main .container .mainRight .writeTools .writeToolsImg img {
-  width: calc(20% - 10px);
-  height: 35px;
-  object-fit: contain;
-  transition: 0.3s;
-  opacity: 1;
-  cursor: pointer;
-  position: relative;
-  bottom: 0;
-}
-main .container .mainRight .writeTools .writeToolsImg img:hover {
-  opacity: 0.5;
-}
-main .container .mainRight .statsWrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-main .container .mainRight .statsWrap span {
-  font-size: 14px;
-  color: #9C9C9C;
-}
-main .container .mainRight .statsWrap span:first-child {
-  font-weight: 600;
-  color: #000;
-}
-main .container .mainRight .seoScore {
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 1px 0px #eee;
-  margin-bottom: 25px;
-}
-main .container .mainRight .seoScore h3 {
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 30px;
-}
-main .container .mainRight .seoScore .scoreWrap {
-  width: 230px;
-  height: 230px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: conic-gradient(#4BCC83 0% 70%, transparent 0% 85%);
-  position: relative;
-}
-main .container .mainRight .seoScore .scoreWrap::after {
-  width: 92%;
-  height: 92%;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 10;
-  border-radius: 50%;
-}
-main .container .mainRight .seoScore .scoreWrap .scoreLight {
-  width: 85%;
-  height: 85%;
-  background-color: #E1F0FD;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-main .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner {
-  width: 85%;
-  height: 85%;
-  background-color: #0080EF;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-main .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-}
-main .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner span {
-  font-size: 16px;
-  color: #fff;
-}
-main .container .mainRight .analyzeWrap {
-  border-radius: 8px;
-  padding: 10px 14px;
-  margin-bottom: 25px;
-}
-main .container .mainRight .analyzeWrap .custom-select {
-  width: 100%;
-  height: 49px;
-  position: relative;
-  display: inline-block;
-  margin: 10px 0;
-}
-main .container .mainRight .analyzeWrap .custom-select select {
-  display: none;
-}
-main .container .mainRight .analyzeWrap .custom-select .select-styled {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border: 1px solid rgba(0, 127, 239, 0.2588235294);
-  border-radius: 5px;
-  outline: none;
-  font-size: 14px;
-  color: #7C7676;
-  padding: 0 15px;
-}
-main .container .mainRight .analyzeWrap .custom-select .select-styled:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  margin-top: -3px;
-  border-width: 6px 6px 0;
-  border-color: #555 transparent transparent transparent;
-  border-style: solid;
-  transition: transform 0.3s ease-in-out;
-}
-main .container .mainRight .analyzeWrap .custom-select .select-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  border: 1px solid #ccc;
-  border-top: none;
-  background: #fff;
-  z-index: 10;
-}
-main .container .mainRight .analyzeWrap .custom-select .select-options div {
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-main .container .mainRight .analyzeWrap .custom-select .select-options div:hover {
-  background-color: #ddd;
-}
-main .container .mainRight .analyzeWrap span {
-  color: #7C7676;
-  font-size: 14px;
-}
-main .container .mainRight .analyzeWrap .colab {
-  display: block;
-  text-align: end;
-  margin-bottom: 15px;
-}
-main .container .mainRight .analyzeWrap .colab span {
-  color: #0080EF;
-}
-main .container .mainRight .analyzeWrap button {
-  width: 100%;
-  height: 49px;
-  background-color: #0080EF;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-main .container .mainRight .analyzeWrap button:hover {
-  background-color: #005fb3;
-}
-main .container .mainRight .candidate {
-  width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 15px;
-}
-main .container .mainRight .candidate .candidateHeading {
-  margin-bottom: 25px;
-}
-main .container .mainRight .candidate .candidateHeading h2 {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 15px;
-}
-main .container .mainRight .candidate .candidateHeading .candidProg {
-  width: 100%;
-  height: 3px;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: rgba(0, 128, 239, 0.168627451);
-}
-main .container .mainRight .candidate .candidateHeading .candidProg .candidProgInner {
-  width: 60%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #0080EF;
-}
-main .container .mainRight .candidate .candidateHeading span {
-  font-size: 14px;
-  color: #7C7676;
-  display: block;
-  text-align: end;
-  margin-top: 8px;
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-size: 13px;
-  color: #7C7676;
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier li span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: block;
-  margin-bottom: -2px;
-  margin-right: 5px;
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier li:first-child span {
-  background-color: rgba(255, 109, 111, 0.3019607843);
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier li:nth-child(2) span {
-  background-color: rgba(0, 128, 239, 0.6);
-}
-main .container .mainRight .candidate .candidMain .candidIdentifier li:last-child span {
-  background-color: #C8FBDE;
-}
-main .container .mainRight .candidate .candidMain .cadidTags {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-main .container .mainRight .candidate .candidMain .cadidTags li {
-  width: fit-content;
-  height: 30px;
-  border-radius: 30px;
-  font-size: 13px;
-  padding: 0 11px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #7C7676;
-  margin-right: 8px;
-  margin-bottom: 8px;
-}
-main .container .mainRight .candidate .candidMain .cadidTags li.tagBlue {
-  background-color: #E1F0FD;
-}
-main .container .mainRight .candidate .candidMain .cadidTags li.tagGreen {
-  background-color: #D3FFE6;
-}
-main .container .mainRight .candidate .candidMain .cadidTags li.tagRed {
-  background-color: #FAD5D6;
-}
-main .container .mainRight .candidate .candidMain .cadidTags li span {
-  margin-top: -3px;
-}
-main .container .mainRight .candidate .candidMain a {
-  font-size: 14px;
-  color: #0080EF;
-  text-align: center;
-  margin-top: 15px;
-  display: block;
-}
-main .container .mainRight .candidate .candidMain a img {
-  margin-bottom: -3px;
-  margin-left: 5px;
-}
-main .container .mainRight .plagRism {
-  width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 5px;
-}
-main .container .mainRight .plagRism h2 {
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-  font-family: "Inter", sans-serif;
-}
-main .container .mainRight .plagRism .plagScoreWrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore {
-  width: 105px;
-  height: 105px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: conic-gradient(#FF6D6F 0% 70%, transparent 0% 85%);
-  position: relative;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore.secondPlagScore {
-  background: conic-gradient(#4BCC83 0% 70%, transparent 0% 85%);
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore::after {
-  width: 92%;
-  height: 92%;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  z-index: 10;
-  border-radius: 50%;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight {
-  width: 85%;
-  height: 85%;
-  background-color: #FFDDDD;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight.secondPlagLight {
-  background-color: #E1F0FD;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner {
-  width: 85%;
-  height: 85%;
-  background-color: #FF6D6F;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner.secondPlagInner {
-  background-color: #0080EF;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner h3 {
-  font-size: 16px;
-  font-weight: 500;
-  color: #fff;
-}
-main .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner span {
-  font-size: 12px;
-  color: #fff;
-}
-main .container .mainRight .plagRism button {
-  width: 100%;
-  height: 32px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background-color: #0080EF;
-  color: #fff;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .container .mainRight .plagRism button span {
-  margin-top: -2px;
-}
-main .container .mainRight .viewPlagSource {
-  width: 100%;
-  padding: 10px 14px;
-  margin-bottom: 25px;
-}
-main .container .mainRight .viewPlagSource h2 {
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 15px;
-}
-main .container .mainRight .viewPlagSource .plagNoti {
-  width: 100%;
-  height: fit-content;
-  padding: 17px;
-  border-radius: 5px;
-  background-color: #DAE8F3;
-}
-main .container .mainRight .viewPlagSource .plagNoti h4 {
-  font-size: 14px;
-  font-weight: 400;
-  color: #0080EF;
-  margin-bottom: 8px;
-}
-main .container .mainRight .viewPlagSource .plagNoti p {
-  font-size: 14px;
-  color: #7C7676;
-  margin-bottom: 10px;
-}
-main .container .mainRight .viewPlagSource .plagNoti h3 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 13px;
-}
-main .container .mainRight .viewPlagSource .plagNoti .plagProg {
-  width: 100%;
-  height: 3px;
-  background-color: rgba(0, 128, 239, 0.168627451);
-  border-radius: 5px;
-  overflow: hidden;
-}
-main .container .mainRight .viewPlagSource .plagNoti .plagProg .plagProgInner {
-  width: 70%;
-  height: 100%;
-  border-radius: 5px;
-  background-color: #0080EF;
-}
-
-@media (max-width: 1200px) {
-  main .container .mainLeft .writeInpWrap .writeInpLeft {
-    width: 440px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-    width: 210px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpRight {
-    width: calc(100% - 440px);
-  }
-}
-@media (max-width: 1100px) {
-  main .container {
-    flex-direction: column;
-    align-items: center;
-  }
-  main .container .mainLeft {
-    width: 100%;
-    margin-bottom: 70px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft {
-    width: calc(100% - 80px);
-    padding-right: 35px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-    width: 100%;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpRight {
-    width: 80px;
-  }
-  main .container .mainRight {
-    width: 500px;
-  }
-}
-@media (max-width: 1000px) {
-  main {
-    width: 100%;
-    margin-left: 0;
-  }
-  main .container {
-    padding-top: 5px;
-  }
-  main .container .mainHeading {
-    display: block;
-  }
-}
-@media (max-width: 590px) {
-  main .container .mainLeft .writeInpWrap .writeInpLeft {
-    padding-right: 20px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
-    margin-right: 10px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-    width: calc(100% - 181px);
-  }
-  main .container .mainRight {
-    width: 100%;
-  }
-}
-@media (max-width: 550px) {
-  main .container .mainLeft .writeInpWrap {
-    height: 150px;
-    transition: 0.3s;
-    position: relative;
-  }
-  main .container .mainLeft .writeInpWrap.active {
-    height: 40px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft {
-    width: 100%;
-    height: 150px;
-    padding-right: 0;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
-    flex-wrap: wrap;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-    width: calc(100% - 130px);
-  }
-  main .container .mainLeft .writeInpWrap .writeInpRight {
-    position: absolute;
-    right: 0;
-    top: -8px;
-  }
-}
-@media (max-width: 400px) {
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
-    width: 85px;
-  }
-  main .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
-    width: calc(100% - 95px);
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -1125,6 +428,899 @@ aside nav .upgrade button {
   }
   aside.active {
     left: 0;
+  }
+}
+.dashboardMain {
+  width: calc(100% - 243px);
+  margin-left: 243px;
+}
+.dashboardMain .container {
+  width: 100%;
+  padding: 20px 30px;
+}
+.dashboardMain .container .dashboardHeading {
+  font-weight: 600;
+}
+.dashboardMain .container .convertTopWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid rgba(0, 127, 239, 0.2588235294);
+  border-radius: 5px;
+  padding: 0 15px;
+  outline: none;
+  font-size: 14px;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select {
+  width: 300px;
+  height: 50px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-styled {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 127, 239, 0.2588235294);
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #7C7676;
+  padding: 0 15px;
+  position: relative;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-styled:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0;
+  border-color: #555 transparent transparent transparent;
+  border-style: solid;
+  transition: transform 0.3s ease-in-out;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-styled img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  z-index: 10;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-options div {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dashboardMain .container .convertTopWrap .singleTopConvert .custom-select .select-options div:hover {
+  background-color: #ddd;
+}
+.dashboardMain .container .convertTopWrap img.playImg {
+  width: 40px;
+  cursor: pointer;
+}
+.dashboardMain .container .convertTextWrap {
+  width: 100%;
+  margin-bottom: 45px;
+}
+.dashboardMain .container .convertTextWrap textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 400px;
+  min-height: 400px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30.72px;
+  padding: 22px;
+  border: 2px solid rgba(0, 0, 0, 0.0509803922);
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.dashboardMain .container .convertTextWrap button {
+  width: 205px;
+  height: 50px;
+  border-radius: 6px;
+  background-color: #0080EF;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+.dashboardMain .container .savedAudios {
+  width: 100%;
+}
+.dashboardMain .container .savedAudios .savedHeading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap {
+  width: 100%;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio {
+  width: 100%;
+  height: 132px;
+  border: 2px solid rgba(0, 128, 239, 0.1098039216);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  margin-bottom: 30px;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo {
+  width: 16.6666666667%;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo:last-child {
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo:last-child img {
+  cursor: pointer;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo:last-child img:nth-child(2) {
+  margin: 0 15px;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo h3 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 10px;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo span {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo .audInfEdit {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo .audInfEdit img {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.dashboardMain .container .savedAudios .savedAudiosWrap .singleSavedAudio .singleSavedAudioInner .audioSingleInfo .audInfEdit h4 {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.writerMain {
+  width: calc(100% - 243px);
+  margin-left: 243px;
+}
+.writerMain .container {
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.writerMain .container .mainHeading {
+  display: none;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.writerMain .container .mainLeft {
+  width: calc(100% - 280px);
+  padding-right: 15px;
+}
+.writerMain .container .mainLeft .writeInpWrap {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft {
+  width: 550px;
+  height: 100px;
+  transition: 0.3s;
+  overflow: hidden;
+  opacity: 1;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft.active {
+  height: 0px;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
+  display: block;
+  margin-right: 15px;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+  width: 290px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #0080EF;
+  border-radius: 8px;
+  outline: none;
+  margin-right: 10px;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
+  width: 120px;
+  height: 34px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background-color: #0080EF;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button:hover {
+  background-color: #005fb3;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpRight {
+  width: calc(100% - 550px);
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpRight p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #693fdf;
+  cursor: pointer;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpRight p span {
+  margin-top: -3px;
+  display: block;
+  margin-right: 5px;
+}
+.writerMain .container .mainLeft .writeInpWrap .writeInpRight p img {
+  width: 24px;
+  cursor: pointer;
+}
+.writerMain .container .mainLeft .finishBtn {
+  width: 127px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #0080EF;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.writerMain .container .mainLeft .finishBtn:hover {
+  background-color: #005fb3;
+}
+.writerMain .container .mainLeft .finishBtn span {
+  margin-top: -2px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+.writerMain .container .mainRight {
+  width: 280px;
+}
+.writerMain .container .mainRight .expType {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.writerMain .container .mainRight .expType li {
+  width: calc(25% - 5px);
+  height: 35px;
+  font-size: 14px;
+  background-color: #009e69;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.writerMain .container .mainRight .expType li:hover {
+  background-color: #007a51;
+}
+.writerMain .container .mainRight .expType li:last-child {
+  background-color: #1663bb;
+}
+.writerMain .container .mainRight .expType li:last-child:hover {
+  background-color: #10498b;
+}
+.writerMain .container .mainRight .expType li span {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: -2px;
+}
+.writerMain .container .mainRight .writeTools {
+  width: 100%;
+  border: 1px solid rgba(0, 127, 239, 0.2588235294);
+  border-radius: 6px;
+  margin-bottom: 25px;
+}
+.writerMain .container .mainRight .writeTools .writeToolsHeading {
+  padding: 10px 25px;
+  border-bottom: 1px solid rgba(0, 127, 239, 0.2588235294);
+}
+.writerMain .container .mainRight .writeTools .writeToolsHeading h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.writerMain .container .mainRight .writeTools .writeToolsImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.writerMain .container .mainRight .writeTools .writeToolsImg img {
+  width: calc(20% - 10px);
+  height: 35px;
+  object-fit: contain;
+  transition: 0.3s;
+  opacity: 1;
+  cursor: pointer;
+  position: relative;
+  bottom: 0;
+}
+.writerMain .container .mainRight .writeTools .writeToolsImg img:hover {
+  opacity: 0.5;
+}
+.writerMain .container .mainRight .statsWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.writerMain .container .mainRight .statsWrap span {
+  font-size: 14px;
+  color: #9C9C9C;
+}
+.writerMain .container .mainRight .statsWrap span:first-child {
+  font-weight: 600;
+  color: #000;
+}
+.writerMain .container .mainRight .seoScore {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 1px 0px #eee;
+  margin-bottom: 25px;
+}
+.writerMain .container .mainRight .seoScore h3 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 30px;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap {
+  width: 230px;
+  height: 230px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: conic-gradient(#4BCC83 0% 70%, transparent 0% 85%);
+  position: relative;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap::after {
+  width: 92%;
+  height: 92%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 50%;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap .scoreLight {
+  width: 85%;
+  height: 85%;
+  background-color: #E1F0FD;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner {
+  width: 85%;
+  height: 85%;
+  background-color: #0080EF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.writerMain .container .mainRight .seoScore .scoreWrap .scoreLight .scoreInner span {
+  font-size: 16px;
+  color: #fff;
+}
+.writerMain .container .mainRight .analyzeWrap {
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 25px;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select {
+  width: 100%;
+  height: 49px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 0;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select select {
+  display: none;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select .select-styled {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0, 127, 239, 0.2588235294);
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #7C7676;
+  padding: 0 15px;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select .select-styled:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -3px;
+  border-width: 6px 6px 0;
+  border-color: #555 transparent transparent transparent;
+  border-style: solid;
+  transition: transform 0.3s ease-in-out;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select .select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  z-index: 10;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select .select-options div {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.writerMain .container .mainRight .analyzeWrap .custom-select .select-options div:hover {
+  background-color: #ddd;
+}
+.writerMain .container .mainRight .analyzeWrap span {
+  color: #7C7676;
+  font-size: 14px;
+}
+.writerMain .container .mainRight .analyzeWrap .colab {
+  display: block;
+  text-align: end;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainRight .analyzeWrap .colab span {
+  color: #0080EF;
+}
+.writerMain .container .mainRight .analyzeWrap button {
+  width: 100%;
+  height: 49px;
+  background-color: #0080EF;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.writerMain .container .mainRight .analyzeWrap button:hover {
+  background-color: #005fb3;
+}
+.writerMain .container .mainRight .candidate {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainRight .candidate .candidateHeading {
+  margin-bottom: 25px;
+}
+.writerMain .container .mainRight .candidate .candidateHeading h2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainRight .candidate .candidateHeading .candidProg {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(0, 128, 239, 0.168627451);
+}
+.writerMain .container .mainRight .candidate .candidateHeading .candidProg .candidProgInner {
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #0080EF;
+}
+.writerMain .container .mainRight .candidate .candidateHeading span {
+  font-size: 14px;
+  color: #7C7676;
+  display: block;
+  text-align: end;
+  margin-top: 8px;
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 13px;
+  color: #7C7676;
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier li span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: -2px;
+  margin-right: 5px;
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier li:first-child span {
+  background-color: rgba(255, 109, 111, 0.3019607843);
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier li:nth-child(2) span {
+  background-color: rgba(0, 128, 239, 0.6);
+}
+.writerMain .container .mainRight .candidate .candidMain .candidIdentifier li:last-child span {
+  background-color: #C8FBDE;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags li {
+  width: fit-content;
+  height: 30px;
+  border-radius: 30px;
+  font-size: 13px;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7C7676;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags li.tagBlue {
+  background-color: #E1F0FD;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags li.tagGreen {
+  background-color: #D3FFE6;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags li.tagRed {
+  background-color: #FAD5D6;
+}
+.writerMain .container .mainRight .candidate .candidMain .cadidTags li span {
+  margin-top: -3px;
+}
+.writerMain .container .mainRight .candidate .candidMain a {
+  font-size: 14px;
+  color: #0080EF;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+}
+.writerMain .container .mainRight .candidate .candidMain a img {
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
+.writerMain .container .mainRight .plagRism {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 5px;
+}
+.writerMain .container .mainRight .plagRism h2 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore {
+  width: 105px;
+  height: 105px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: conic-gradient(#FF6D6F 0% 70%, transparent 0% 85%);
+  position: relative;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore.secondPlagScore {
+  background: conic-gradient(#4BCC83 0% 70%, transparent 0% 85%);
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore::after {
+  width: 92%;
+  height: 92%;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 50%;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight {
+  width: 85%;
+  height: 85%;
+  background-color: #FFDDDD;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight.secondPlagLight {
+  background-color: #E1F0FD;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner {
+  width: 85%;
+  height: 85%;
+  background-color: #FF6D6F;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner.secondPlagInner {
+  background-color: #0080EF;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.writerMain .container .mainRight .plagRism .plagScoreWrap .plagSingleScore .plagLight .plagInner span {
+  font-size: 12px;
+  color: #fff;
+}
+.writerMain .container .mainRight .plagRism button {
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: #0080EF;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.writerMain .container .mainRight .plagRism button span {
+  margin-top: -2px;
+}
+.writerMain .container .mainRight .viewPlagSource {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 25px;
+}
+.writerMain .container .mainRight .viewPlagSource h2 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 15px;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti {
+  width: 100%;
+  height: fit-content;
+  padding: 17px;
+  border-radius: 5px;
+  background-color: #DAE8F3;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti h4 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0080EF;
+  margin-bottom: 8px;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti p {
+  font-size: 14px;
+  color: #7C7676;
+  margin-bottom: 10px;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti .plagProg {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 128, 239, 0.168627451);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.writerMain .container .mainRight .viewPlagSource .plagNoti .plagProg .plagProgInner {
+  width: 70%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #0080EF;
+}
+
+@media (max-width: 1200px) {
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: 440px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: 210px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpRight {
+    width: calc(100% - 440px);
+  }
+}
+@media (max-width: 1100px) {
+  .writerMain .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .writerMain .container .mainLeft {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: calc(100% - 80px);
+    padding-right: 35px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: 100%;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpRight {
+    width: 80px;
+  }
+  .writerMain .container .mainRight {
+    width: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .writerMain {
+    width: 100%;
+    margin-left: 0;
+  }
+  .writerMain .container {
+    padding-top: 5px;
+  }
+  .writerMain .container .mainHeading {
+    display: block;
+  }
+}
+@media (max-width: 590px) {
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft {
+    padding-right: 20px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
+    margin-right: 10px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 181px);
+  }
+  .writerMain .container .mainRight {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .writerMain .container .mainLeft .writeInpWrap {
+    height: 150px;
+    transition: 0.3s;
+    position: relative;
+  }
+  .writerMain .container .mainLeft .writeInpWrap.active {
+    height: 40px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft {
+    width: 100%;
+    height: 150px;
+    padding-right: 0;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp {
+    flex-wrap: wrap;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp span {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 130px);
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpRight {
+    position: absolute;
+    right: 0;
+    top: -8px;
+  }
+}
+@media (max-width: 400px) {
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
+    width: 85px;
+  }
+  .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
+    width: calc(100% - 95px);
   }
 }
 

@@ -2,6 +2,9 @@ const nestedItem = document.querySelector(".nestedItem")
 const nestedToggleMenu = document.querySelector(".nestedToggleMenu")
 const arrow = document.querySelector(".arrow")
 
+const writeInpToggle = document.querySelector(".writeInpRight p")
+const writeInpWrap = document.querySelector(".writeInpWrap")
+const writeInpLeft = document.querySelector(".writeInpLeft")
 
 const menuToggle = document.querySelector(".menuToggle")
 const aside = document.querySelector("aside")
@@ -15,6 +18,23 @@ nestedItem.addEventListener("click", () => {
 
 
 
+let isOpen = true
+writeInpToggle.addEventListener("click", () => {
+    if (isOpen) {
+        writeInpLeft.style.opacity = "0"
+        setTimeout(() => {
+            writeInpLeft.classList.add("active")
+            writeInpWrap.classList.add("active")
+        }, 300);
+        isOpen = false
+    } else {
+        writeInpLeft.style.opacity = "1"
+        writeInpLeft.classList.remove("active")
+        writeInpWrap.classList.remove("active")
+        isOpen = true
+    }
+})
+
 
 menuToggle.addEventListener("click", () => {
     aside.classList.add("active")
@@ -27,6 +47,7 @@ overlay.addEventListener("click", () => {
 
 
 
+// custom dropdown functionality
 function setupCustomSelect(selectId) {
     const selectContainer = document.getElementById(selectId);
     const selectStyled = selectContainer.querySelector('.select-styled');
@@ -38,15 +59,7 @@ function setupCustomSelect(selectId) {
 
     selectContainer.querySelectorAll('.select-options div').forEach(function (option) {
         option.addEventListener('click', function () {
-            // Get the data attribute value containing the image source
-            const imgSrc = this.getAttribute('data-img-src');
-
-            // Update the content of the styled select with both text and image
-            selectStyled.innerHTML = `
-                <img src="${imgSrc}" alt="">
-                ${this.innerText}
-            `;
-
+            selectStyled.innerText = this.innerText;
             selectOptions.style.display = 'none';
         });
     });
@@ -62,3 +75,4 @@ function setupCustomSelect(selectId) {
 // Set up the custom selects
 setupCustomSelect('customSelect1');
 setupCustomSelect('customSelect2');
+setupCustomSelect('customSelect3');
