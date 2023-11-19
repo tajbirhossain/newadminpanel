@@ -5,25 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="dashHeading">
         <img src="assets/images/icons/bars.svg" alt="" class="menuToggle">
         <div class="headerLeft">
             <div class="logoWrap">
                 <img src="assets/images/LOGO-SEOAI.svg" alt="" class="siteLogo">
             </div>
-            <h1>Analytics</h1>
             <form>
                 <div class="headerInpWrap">
                     <img src="assets/images/icons/search.svg" alt="">
-                    <input type="text" placeholder="Search For Anything...">
+                    <input type="text" placeholder="Buscar herramienta y plantilla...">
                 </div>
             </form>
         </div>
         <div class="headerRight">
+            <div class="actBtnWrap">
+                <button>
+                    <img src="assets/images/icons/cal-img.svg" alt="">
+                    <span>Plans</span>
+                </button>
+                <button>
+                    <img src="assets/images/icons/plus-white.svg" alt="">
+                    <span>New Report</span>
+                </button>
+                <button>
+                    <img src="assets/images/icons/plus-white.svg" alt="">
+                    <span>Web visits analytics</span>
+                </button>
+            </div>
             <button class="modeToggle">
                 <img src="assets/images/icons/moon.svg" alt="">
             </button>
@@ -31,11 +48,11 @@
                 <div class="profileLeft">
                     <img src="assets/images/person.png" alt="">
                 </div>
-                <div class="profileRight">
+                <!-- <div class="profileRight">
                     <h3>James Williams</h3>
                     <span>Marketing Manager</span>
                     <img src="assets/images/icons/dots.png" alt="" class="dots">
-                </div>
+                </div> -->
             </div>
         </div>
     </header>
@@ -132,109 +149,613 @@
     </aside>
     <div class="overlay"></div>
 
+
     <main class="dashboardMain">
         <div class="container">
-            <h2 class="dashboardHeading">Convert text to speech</h2>
-            <div class="convertTopWrap">
-                <div class="singleTopConvert">
-                    <input type="text" placeholder="Title">
-                </div>
-                <div class="singleTopConvert">
-                    <div class="custom-select" id="customSelect1">
-                        <div class="select-styled">Select an option</div>
-                        <div class="select-options">
-                            <div data-img-src="assets/images/flags/usa-flag.png">English (United States)</div>
-                            <div data-img-src="assets/images/flags/uk-flag.png">English (United Kingdom)</div>
-                        </div>
+            <div class="dashboardTop">
+                <div class="dashTopLeft">
+                    <img src="assets/images/icons/world.svg" alt="">
+                    <div class="topLeftInfo">
+                        <h2>PROYECTOS WEB <span>8 proyectos www</span></h2>
+                        <button>
+                            Seleccionar Proyecto
+                            <img src="assets/images/icons/arrow-down.svg" alt="">
+                        </button>
                     </div>
                 </div>
-                <div class="singleTopConvert">
-                    <div class="custom-select" id="customSelect2">
-                        <div class="select-styled">Select an option</div>
-                        <div class="select-options">
-                            <div data-img-src="assets/images/flags/red-dot.png">Voice Sample (James)</div>
-                            <div data-img-src="assets/images/flags/red-dot.png">Voice Sample (Harry)</div>
-                        </div>
+                <div class="dashTopRight">
+                    <h2>CREAR NUVO PROYECTO</h2>
+                    <p>Aqui estan las estadisticas de su contenido duranto la semana actual</p>
+                    <button>
+                        <img src="assets/images/icons/plus-sm.svg" alt="">
+                        Anadir Nuevo www
+                    </button>
+                </div>
+            </div>
+
+            <div class="dashboardContent">
+                <div class="contentTop">
+                    <div class="contentHeading">
+                        <h1>Estadisticas de la semana</h1>
+                        <p>Aqui estan las estadisticas de su contenido duranto la semana actual</p>
+                    </div>
+                    <div class="contentToggleWrap">
+                        <button>Today</button>
+                        <button class="active">Esta semana</button>
+                        <button>Last 30 Days Total</button>
                     </div>
                 </div>
-                <img src="assets/images/icons/play-button.png" alt="" class="playImg">
-            </div>
-            <div class="convertTextWrap">
-                <textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </textarea>
-                <button>Convert</button>
-            </div>
-            <div class="savedAudios">
-                <h2 class="savedHeading">Saved Audios</h2>
-                <div class="savedAudiosWrap">
-                    <div class="singleSavedAudio">
-                        <div class="singleSavedAudioInner">
-                            <div class="audioSingleInfo">
-                                <h3>Date</h3>
-                                <span>09-11-2023</span>
+                <div class="reportsWrap">
+                    <div class="reportLeft">
+                        <h2>SEO Reports</h2>
+                        <div class="repProgressWrap">
+                            <div class="repSingleProgress">
+                                <div class="progressTop">
+                                    <div class="progressTopLeft">
+                                        <img src="assets/images/icons/triangle.svg" alt="">
+                                        <span>
+                                            1 bad report
+                                            <img src="assets/images/icons/arrow-right-sm.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="progressTopRight">
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="progressInner"></div>
+                                </div>
+                                <div class="progressRedial"></div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio Title</h3>
-                                <div class="audInfEdit">
-                                    <img src="assets/images/icons/aud-edit.svg" alt="">
-                                    <div class="audInfEditRight">
-                                        <h4>Untitled</h4>
-                                        <span>Anthony (Us)-Male</span>
+                            <div class="repSingleProgress">
+                                <div class="progressTop">
+                                    <div class="progressTopLeft">
+                                        <img src="assets/images/icons/dot-yellow.svg" alt="">
+                                        <span>
+                                            1 bad report
+                                            <img src="assets/images/icons/arrow-right-sm.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="progressTopRight">
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="progressInner progressInner2"></div>
+                                </div>
+                                <div class="progressRedial2"></div>
+                            </div>
+                            <div class="repSingleProgress">
+                                <div class="progressTop">
+                                    <div class="progressTopLeft">
+                                        <img src="assets/images/icons/dot-green.svg" alt="">
+                                        <span>
+                                            1 bad report
+                                            <img src="assets/images/icons/arrow-right-sm.svg" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="progressTopRight">
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                                <div class="progressBar">
+                                    <div class="progressInner progressInner3"></div>
+                                </div>
+                                <div class="progressRedial3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reportRight">
+                        <h2>Overview</h2>
+                        <div class="overviewWrap">
+                            <div class="singleOverview">
+                                <div class="overviewTop">
+                                    <h3>4,945</h3>
+                                    <div class="overTopRight">
+                                        <span>
+                                            <img src="assets/images/icons/dot-blue.svg" alt="">
+                                            <span>Legend 1</span>
+                                            <img src="assets/images/icons/info.svg" alt="">
+                                        </span>
+                                        <p><img src="assets/images/icons/red-arrow.svg" alt=""> 47.7%</p>
+                                    </div>
+                                </div>
+                                <div class="areaChart"></div>
+                            </div>
+                            <div class="singleOverview">
+                                <div class="overviewTop">
+                                    <h3>4,945</h3>
+                                    <div class="overTopRight">
+                                        <span>
+                                            <img src="assets/images/icons/dot-blue.svg" alt="">
+                                            <span>Legend 1</span>
+                                            <img src="assets/images/icons/info.svg" alt="">
+                                        </span>
+                                        <p><img src="assets/images/icons/red-arrow.svg" alt=""> 47.7%</p>
+                                    </div>
+                                </div>
+                                <div class="areaChart2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profileContent">
+                    <div class="profLeft">
+                        <img src="assets/images/person.png" alt="">
+                        <h2>Mark Wood</h2>
+                        <p>Your account is currently part
+                            of our Free Trial Plan</p>
+                        <button>Upgrade Now</button>
+                    </div>
+                    <div class="profRight">
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/doc-blue.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Super Writer SEO</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/doc-light-blue.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Templates</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/img-yellow.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Image Created</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/crop-green.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>AI Chat</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/tool-orange.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Used tools</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/music-dull-yellow.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Audio Transcribed</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/wave-orange.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Text to Audio</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/pc-purple.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Others</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="singleProfCon">
+                            <div class="profConfInner">
+                                <img src="assets/images/big-icon/code-pink.svg" alt="">
+                                <div class="profConInfo">
+                                    <h3>Codes generator</h3>
+                                    <span>1 contents</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="favTemplate">
+                    <h2>Favorite Templates</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="singleFav">
+                                    <div class="favTop">
+                                        <img src="assets/images/icons/color-dots.svg" alt="">
+                                    </div>
+                                    <div class="favCenter">
+                                        <img src="assets/images/big-icon/blog-ic.svg" alt="">
+                                        <span>Blog Titles</span>
+                                    </div>
+                                    <div class="favBottom">
+                                        <div class="favLine"></div>
+                                        <div class="favLine"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <button>Use this Template</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio Privew</h3>
-                                <img src="assets/images/icons/wave.svg" alt="">
-                            </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio ID</h3>
-                                <span>U78989897667</span>
-                            </div>
-                            <div class="audioSingleInfo">
-                                <h3>Duratiion</h3>
-                                <span>00:09</span>
-                            </div>
-                            <div class="audioSingleInfo">
-                                <img src="assets/images/icons/aud-play.svg" alt="">
-                                <img src="assets/images/icons/aud-download.svg" alt="">
-                                <img src="assets/images/icons/aud-del.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="singleSavedAudio">
-                        <div class="singleSavedAudioInner">
-                            <div class="audioSingleInfo">
-                                <h3>Date</h3>
-                                <span>09-11-2023</span>
-                            </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio Title</h3>
-                                <div class="audInfEdit">
-                                    <img src="assets/images/icons/aud-edit.svg" alt="">
-                                    <div class="audInfEditRight">
-                                        <h4>Untitled</h4>
-                                        <span>Anthony (Us)-Male</span>
+                            <div class="swiper-slide">
+                                <div class="singleFav">
+                                    <div class="favTop">
+                                        <img src="assets/images/icons/color-dots.svg" alt="">
+                                    </div>
+                                    <div class="favCenter">
+                                        <img src="assets/images/big-icon/magic-ic.svg" alt="">
+                                        <span>Email Subject Line</span>
+                                    </div>
+                                    <div class="favBottom">
+                                        <div class="favLine"></div>
+                                        <div class="favLine"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <button>Use this Template</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio Privew</h3>
-                                <img src="assets/images/icons/wave.svg" alt="">
+                            <div class="swiper-slide">
+                                <div class="singleFav">
+                                    <div class="favTop">
+                                        <img src="assets/images/icons/color-dots.svg" alt="">
+                                    </div>
+                                    <div class="favCenter">
+                                        <img src="assets/images/big-icon/draw-ic.svg" alt="">
+                                        <span>Landing Page Headline </span>
+                                    </div>
+                                    <div class="favBottom">
+                                        <div class="favLine"></div>
+                                        <div class="favLine"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <button>Use this Template</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <h3>Audio ID</h3>
-                                <span>U78989897667</span>
+                            <div class="swiper-slide">
+                                <div class="singleFav">
+                                    <div class="favTop">
+                                        <img src="assets/images/icons/color-dots.svg" alt="">
+                                    </div>
+                                    <div class="favCenter">
+                                        <img src="assets/images/big-icon/blog-ic.svg" alt="">
+                                        <span>Blog Outlines</span>
+                                    </div>
+                                    <div class="favBottom">
+                                        <div class="favLine"></div>
+                                        <div class="favLine"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <button>Use this Template</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <h3>Duratiion</h3>
-                                <span>00:09</span>
+                            <div class="swiper-slide">
+                                <div class="singleFav">
+                                    <div class="favTop">
+                                        <img src="assets/images/icons/color-dots.svg" alt="">
+                                    </div>
+                                    <div class="favCenter">
+                                        <img src="assets/images/big-icon/seo-ic.svg" alt="">
+                                        <span>SEO Keywords</span>
+                                    </div>
+                                    <div class="favBottom">
+                                        <div class="favLine"></div>
+                                        <div class="favLine"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <div class="favLineSm"></div>
+                                        <button>Use this Template</button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="audioSingleInfo">
-                                <img src="assets/images/icons/aud-play.svg" alt="">
-                                <img src="assets/images/icons/aud-download.svg" alt="">
-                                <img src="assets/images/icons/aud-del.svg" alt="">
+                        </div>
+                        <div class="swiper-button-prev swiperBtn">
+                            <img src="assets/images/big-icon/arrowLeft-ic.svg" alt="">
+                        </div>
+                        <div class="swiper-button-next swiperBtn">
+                            <img src="assets/images/big-icon/arrowRight-ic.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bigData">
+                    <div class="bigDataHeading">
+                        <h2>Uso de credtos para proyectos MES / PERIODON EN CURSO</h2>
+                        <p>Aqui estan las estadisticas de todos tus proyectos web</p>
+                    </div>
+                    <div class="bigDataContent">
+                        <div class="bigDataWrap">
+                            <div class="singleBigData"></div>
+                            <div class="singleBigData">
+                                <div class="bigRedial2"></div>
+                                <div class="bigDataBottom">
+                                    <span>Reports</span>
+                                    <span>2/5 reports</span>
+                                </div>
+                            </div>
+                            <div class="singleBigData">
+                                <div class="bigRedial3"></div>
+                                <div class="bigDataBottom">
+                                    <span>Domain Analysis</span>
+                                    <span>1250/2000 pageviews</span>
+                                </div>
+                            </div>
+                            <div class="singleBigData">
+                                <div class="bigRedial4"></div>
+                                <div class="bigDataBottom">
+                                    <span>Palabras Usadas IA</span>
+                                    <span>2500/250.00</span>
+                                </div>
+                            </div>
+                            <div class="singleBigData">
+                                <div class="bigRedial"></div>
+                                <div class="bigDataBottom">
+                                    <span>Imagenes Cradas IA</span>
+                                    <span>12/45 imagenes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bigDataCountWrap">
+                            <div class="singleBigDataCount">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="bigDataContRight">
+                                    <span>MI Proyecto</span>
+                                    <span>www.ayuntamiento.es</span>
+                                </div>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>650</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>450</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                        <div class="bigDataCountWrap">
+                            <div class="singleBigDataCount">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="bigDataContRight">
+                                    <span>MI Proyecto</span>
+                                    <span>www.ayuntamiento.es</span>
+                                </div>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>650</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>450</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                        <div class="bigDataCountWrap">
+                            <div class="singleBigDataCount">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="bigDataContRight">
+                                    <span>MI Proyecto</span>
+                                    <span>www.ayuntamiento.es</span>
+                                </div>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>650</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>450</h3>
+                            </div>
+                            <div class="singleBigDataCount">
+                                <h3>1</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wordGenerate">
+                    <div class="genHeading">
+                        <div class="genHeadingLeft">
+                            <h2>Word Generation</h2>
+                            <p>Have your favorite AI Chat assistants handy anytime you need them</p>
+                        </div>
+                        <div class="genHeadingRight">
+                            <h3>7950 Words Used all projects</h3>
+                            <div class="contentToggleWrap">
+                                <button>Today</button>
+                                <button class="active">Esta semana</button>
+                                <button>Last 30 Days Total</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="barChartBig"></div>
+                </div>
+
+                <div class="recentContent">
+                    <div class="recentConHeading">
+                        <h2>Contenidos mas recients</h2>
+                        <button>View All</button>
+                    </div>
+                    <div class="recentConWrap">
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/blog-ic.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/bot-head.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/blog-ic.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/green-aud.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/bot-head.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/green-aud.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/bot-head.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/blog-ic.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="singleRecentCon">
+                            <div class="singleConLeft">
+                                <img src="assets/images/big-icon/yellow-file.svg" alt="">
+                                <div class="singleConLeftInf">
+                                    <span>Texto</span>
+                                    <h3>Explorar la costa: T...</h3>
+                                </div>
+                            </div>
+                            <div class="singleConMiddle">
+                                <h4>1520 <span>Palettes</span></h4>
+                            </div>
+                            <div class="singleConInform">
+                                <img src="assets/images/LOGO-SEO-AI 1.svg" alt="">
+                                <div class="conInformCenter">
+                                    <span>Informe</span>
+                                    <h3>sav.fr/tad/appeler-crdiscount-pour-vulvre-commande-en-ligne-par-sms/</h3>
+                                    <span>2 weeks ago</span>
+                                </div>
+                                <span class="conInformSts">Decent</span>
+                            </div>
+                            <div class="singleConMenu">
+                                <img src="assets/images/icons/menu-blue.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -245,9 +766,9 @@
 
 
 
-
-
+    <script src="assets/js/charts.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@ aside {
     position: fixed;
     top: 80px;
     left: 0;
+    font-family: variables.$font-inter;
 
     &::-webkit-scrollbar {
         display: none;
@@ -46,9 +47,9 @@ aside {
                     margin-right: 8px;
                 }
 
-                span {
-                    margin-top: -3px;
-                }
+                // span {
+                //     margin-top: -3px;
+                // }
 
                 .arrow {
                     position: absolute;

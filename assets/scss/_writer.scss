@@ -3,6 +3,13 @@
 .writerMain {
     width: calc(100% - 243px);
     margin-left: 243px;
+    font-family: variables.$font-amsi;
+
+    p,
+    button,
+    input {
+        font-family: 'Inter', sans-serif;
+    }
 
     .container {
         width: 100%;
@@ -295,6 +302,7 @@
                                 font-size: 24px;
                                 font-weight: 600;
                                 color: #fff;
+                                margin-bottom: 0;
                             }
 
                             span {
@@ -788,8 +796,10 @@
     .writerMain {
         width: 100%;
         margin-left: 0;
+
         .container {
             padding-top: 5px;
+
             .mainHeading {
                 display: block;
             }
@@ -836,6 +846,7 @@
                 .writeInpWrap {
                     height: 150px;
                     transition: .3s;
+
                     &.active {
                         height: 40px;
                     }
@@ -877,6 +888,7 @@
     .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp button {
         width: 85px;
     }
+
     .writerMain .container .mainLeft .writeInpWrap .writeInpLeft .writeSingleInp input {
         width: calc(100% - 95px);
     }

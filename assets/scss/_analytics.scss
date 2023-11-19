@@ -1,0 +1,229 @@
+@use './variables';
+
+.analyticsMain {
+    width: calc(100% - 243px);
+    margin-left: 243px;
+
+    .container {
+        width: 100%;
+        padding: 20px 30px;
+
+        .analyticsHeading {
+            font-weight: 600;
+        }
+
+        .convertTopWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+
+            .singleTopConvert {
+                input {
+                    width: 300px;
+                    height: 50px;
+                    border: variables.$borderBlueLight1;
+                    border-radius: 5px;
+                    padding: 0 15px;
+                    outline: none;
+                    font-size: 14px;
+                }
+
+                .custom-select {
+                    width: 300px;
+                    height: 50px;
+                    position: relative;
+                    display: inline-block;
+                    margin: 10px 0;
+
+                    .select-styled {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        border: variables.$borderBlueLight1;
+                        border-radius: 5px;
+                        outline: none;
+                        font-size: 14px;
+                        color: variables.$darkGray;
+                        padding: 0 15px;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            top: 50%;
+                            right: 15px;
+                            margin-top: -3px;
+                            border-width: 6px 6px 0;
+                            border-color: #555 transparent transparent transparent;
+                            border-style: solid;
+                            transition: transform 0.3s ease-in-out;
+                        }
+
+                        img {
+                            width: 22px;
+                            height: 22px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            margin-right: 8px; // Add spacing between image and text
+                        }
+                    }
+
+                    .select-options {
+                        display: none;
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        right: 0;
+                        border: 1px solid #ccc;
+                        border-top: none;
+                        background: #fff;
+                        z-index: 10;
+
+                        div {
+                            padding: 10px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            transition: background-color 0.3s;
+
+                            &:hover {
+                                background-color: #ddd;
+                            }
+                        }
+                    }
+                }
+            }
+
+            img.playImg {
+                width: 40px;
+                cursor: pointer;
+            }
+        }
+
+        .convertTextWrap {
+            width: 100%;
+            margin-bottom: 45px;
+
+            textarea {
+                width: 100%;
+                max-width: 100%;
+                min-width: 100%;
+                height: 400px;
+                min-height: 400px;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30.72px;
+
+                padding: 22px;
+                border: 2px solid #0000000D;
+                outline: none;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            button {
+                width: 205px;
+                height: 50px;
+                border-radius: 6px;
+                background-color: variables.$primaryBlue;
+                color: #fff;
+                border: none;
+                outline: none;
+                font-size: 20px;
+                font-weight: 400;
+                font-family: 'Inter', sans-serif;
+                cursor: pointer;
+                display: block;
+                margin: auto;
+            }
+        }
+
+        .savedAudios {
+            width: 100%;
+
+            .savedHeading {
+                font-size: 24px;
+                font-weight: 600;
+                font-family: 'Inter', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            .savedAudiosWrap {
+                width: 100%;
+
+                .singleSavedAudio {
+                    width: 100%;
+                    height: 132px;
+                    border: 2px solid #0080EF1C;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0px 20px;
+                    margin-bottom: 30px;
+
+                    .singleSavedAudioInner {
+                        width: 100%;
+                        height: fit-content;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .audioSingleInfo {
+                            width: calc(100% / 6);
+
+                            &:last-child {
+                                height: 87px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                img {
+                                    cursor: pointer;
+
+                                    &:nth-child(2) {
+                                        margin: 0 30px;
+                                    }
+                                }
+                            }
+
+                            h3 {
+                                font-size: 18px;
+                                font-weight: 500;
+                                font-family: 'Inter', sans-serif;
+                                margin-bottom: 10px;
+                            }
+
+                            span {
+                                font-size: 16px;
+                                font-weight: 400;
+                                font-family: 'Inter', sans-serif;
+                            }
+
+                            .audInfEdit {
+                                display: flex;
+                                align-items: flex-start;
+                                justify-content: flex-start;
+
+                                img {
+                                    margin-right: 5px;
+                                    cursor: pointer;
+                                }
+
+                                h4 {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    font-family: 'Inter', sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
