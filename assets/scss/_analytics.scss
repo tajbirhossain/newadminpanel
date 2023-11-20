@@ -3,6 +3,7 @@
 .analyticsMain {
     width: calc(100% - 243px);
     margin-left: 243px;
+    font-family: variables.$font-inter;
 
     .container {
         width: 100%;
@@ -221,6 +222,129 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1250px) {
+    .analyticsMain {
+        .container {
+            .convertTopWrap {
+                justify-content: flex-start;
+
+                .singleTopConvert {
+                    width: calc(100% / 3 - 10px);
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+
+                    input {
+                        width: 100%;
+                    }
+
+                    .custom-select {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .analyticsMain {
+        .container {
+            .savedAudios {
+                .savedAudiosWrap {
+                    .singleSavedAudio {
+                        height: fit-content;
+                        padding: 20px;
+
+                        .singleSavedAudioInner {
+                            .audioSingleInfo {
+                                padding: 0 5px;
+
+                                span {
+                                    word-break: break-all;
+                                }
+
+                                .audInfEdit {
+                                    img {
+                                        width: unset;
+                                        padding: 0;
+                                    }
+                                }
+
+                                img {
+                                    width: 100%;
+                                    object-fit: contain;
+                                }
+
+                                &:last-child {
+                                    img {
+                                        width: unset;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .analyticsMain {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .analyticsMain {
+        .container {
+            .convertTopWrap {
+                justify-content: flex-start;
+
+                .singleTopConvert {
+                    width: calc(100% / 2 - 10px);
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+            .savedAudios {
+                .savedAudiosWrap {
+                    width: 100%;
+                    overflow-y: clip;
+                    overflow-x: auto;
+                    .singleSavedAudio {
+                        width: 1100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .analyticsMain {
+        .container {
+            .convertTopWrap {
+                justify-content: flex-start;
+
+                .singleTopConvert {
+                    width: 100%;
+                    .custom-select {
+                        margin: 0;
                     }
                 }
             }

@@ -182,8 +182,8 @@ var areaOptions = {
         type: 'gradient',
         gradient: {
             shadeIntensity: 1,
-            opacityFrom: 0.7,
-            opacityTo: 0.4,  // Adjust this value to reduce opacity
+            opacityFrom: [0, 0.7],
+            opacityTo: [0, 0.4],  // Adjust this value to reduce opacity
             stops: [0, 90, 100]
         },
     },
@@ -245,8 +245,8 @@ var areaOptions2 = {
         type: 'gradient',
         gradient: {
             shadeIntensity: 1,
-            opacityFrom: 0.7,
-            opacityTo: 0.4,  // Adjust this value to reduce opacity
+            opacityFrom: [0.7, 0],
+            opacityTo: [0.4, 0],  // Adjust this value to reduce opacity
             stops: [0, 90, 100]
         },
     },
